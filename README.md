@@ -2,12 +2,25 @@
 ## About ##
 PHP based solution that implements a parser which reads the Apache access log, parses it and saves it to a database.
 
+## Synopsis ##
+
+    php parse.php [ -f ] file [ -d ] database [ -t ] table
 ## Description ##
-I joined here the folder containing the script of the apache parser. it parses the `LogFormat %h %l %u %t % r %>s %b common`.
+This command line can be used to execute a parser which reads the Apache access log, parses it and saves it to a database
+
+- It parses a standard apache access.log file as reference
+- It saves the input into a Mysql Table
+- LogFormat: `%h %l %u %t % r %>s %b common`.
 
 **Log sample line:**
  
         127.0.0.1 - frank [10/Oct/2000:13:55:36 -0700] "GET /apache_pb.gif HTTP/1.0" 200 2326
+## Options ##
+
+
+- -f: (optional) Contains the url to the file `default value: /data/access_log`
+- -d: (optional) Contains the Database name (created if not exist) `default value: apache_log`
+- -t: (optional) Contains the table name (created if not exist) `default value: log`
 
 
 ## Features ##

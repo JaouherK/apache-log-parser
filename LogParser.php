@@ -58,7 +58,7 @@ class LogParser
     public function parse($line)
     {
         if (!preg_match($this->pcreFormat, $line, $matches)) {
-            echo "No match";
+            echo "No match\n";
         }
         $entry = new \stdClass();
         foreach (array_filter(array_keys($matches), 'is_string') as $key) {
