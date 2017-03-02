@@ -25,4 +25,6 @@ This is an Example of usage of this script:
 This command parses file path_to_file and saves data inside sapmleTable within sampleDB
 
 
-![Alt text](/path/to/image.jpg)
+![Alt text](/JaouherK/apache-log-parser/blob/master/img/exec.png)
+
+![Alt text](/JaouherK/apache-log-parser/blob/master/img/exec.png)
