@@ -9,6 +9,7 @@ I joined here the folder containing the script of the apache parser. it parses t
  
         127.0.0.1 - frank [10/Oct/2000:13:55:36 -0700] "GET /apache_pb.gif HTTP/1.0" 200 2326
 
+
 ## Features ##
 
 - I included an access log sample within the folder for test purpose.
@@ -19,12 +20,9 @@ Please change the user and  password for database directly within the config fil
 ## Example ##
 This is an Example of usage of this script:
 
-- ``php parse.php -h'`` : This command displays the help for this script
-- ``php parse.php'`` : This command executes the script with dafault values
+- ``php parse.php -h'`` : This command displays the help for this script.
+![Alt text](/img/help.png)
+- ``php parse.php'`` : This command executes the script with dafault values.
+![Alt text](/img/exec.png)
 - ``php parse.php -f "path_to_file" -d "sampleDB" -t "sapmleTable"``: 
 This command parses file path_to_file and saves data inside sapmleTable within sampleDB
-
-
-![Alt text](/JaouherK/apache-log-parser/blob/master/img/exec.png)
-
-![Alt text](/JaouherK/apache-log-parser/blob/master/img/exec.png)
