@@ -1,6 +1,9 @@
 # Apache log-parser
 ## About ##
-PHP based solution that implements a parser which reads the Apache access log, parses it and saves it to a database.
+![Alt text](/img/exec.png)
+
+
+PHP-cli app that implements a parser which reads the Apache access log and saves its content to a database.
 
 ## Synopsis ##
 
