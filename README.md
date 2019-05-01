@@ -15,6 +15,11 @@ This command line can be used to execute a parser which reads the Apache access 
 - It saves the input into a Mysql Table
 - LogFormat: `%h %l %u %t % r %>s %b common`.
 
+Speed sample:
+- Computations    :8297 ms
+- System calls    :5500 ms
+- Total lines     :86506 lines
+
 **Log sample line:**
 
         127.0.0.1 - frank [10/Oct/2000:13:55:36 -0700] "GET /apache_pb.gif HTTP/1.0" 200 2326
