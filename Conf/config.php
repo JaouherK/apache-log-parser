@@ -1,16 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: kharr
- * Date: 22/02/2017
- * Time: 22:58
- */
 
 $username = 'root';
 $password = '';
 $servername = 'localhost';
 $db = 'apache_log';
-$table = 'log';
+$table = 'log-' . time();
 $log_file = 'data/access_log';
 $header = "\n------------------------------- Access Log Analyser -----------------------------------\n";
 $help = "
@@ -20,7 +14,7 @@ Name
 
 Synopsis
 
-    php parse.php [ -f ] file [ -d ] database [ -t ] table
+    php parser.php [ -f ] file [ -d ] database [ -t ] table
 
 Description
 
@@ -39,15 +33,15 @@ Options
     -d:\t(optional) Contains the Database name (created if not exist)
     \tdefault value: apache_log
     -t:\t(optional) Contains the table name (created if not exist)
-    \tdefault value: log
+    \tdefault value: log-(timestamp)
 
 Examples
 
-php parse.php'
-\tThis command simply Executes the script with dafault values
+php parser.php'
+\tThis command simply Executes the script with default values
 
-php parse.php -f \"path_to_file\" -d \"sampleDB\" -t \"sapmleTable\"
-\tThis command parses file path_to_file and saves data inside sapmleTable within sampleDB\n
+php parser.php -f \"path_to_file\" -d \"sampleDB\" -t \"sapmleTable\"
+\tThis command parses file path_to_file and saves data inside sampleTable within sampleDB\n
 -----------------------------------------------------------------------------------------\n";
 $footer = "For more options Type : php parser.php -h\n
 ------------------------------------------ Stats -------------------------------------\n";

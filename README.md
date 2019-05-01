@@ -4,7 +4,7 @@ PHP based solution that implements a parser which reads the Apache access log, p
 
 ## Synopsis ##
 
-    php parse.php [ -f ] file [ -d ] database [ -t ] table
+    php parser.php [ -f ] file [ -d ] database [ -t ] table
 ## Description ##
 This command line can be used to execute a parser which reads the Apache access log, parses it and saves it to a database
 
@@ -13,7 +13,7 @@ This command line can be used to execute a parser which reads the Apache access 
 - LogFormat: `%h %l %u %t % r %>s %b common`.
 
 **Log sample line:**
- 
+
         127.0.0.1 - frank [10/Oct/2000:13:55:36 -0700] "GET /apache_pb.gif HTTP/1.0" 200 2326
 ## Options ##
 
@@ -33,9 +33,9 @@ Please change the user and  password for database directly within the config fil
 ## Example ##
 This is an Example of usage of this script:
 
-- ``php parse.php -h'`` : This command displays the help for this script.
+- ``php parser.php -h`` : This command displays the help for this script.
 ![Alt text](/img/help.png)
-- ``php parse.php'`` : This command executes the script with dafault values.
+- ``php parser.php`` : This command executes the script with dafault values.
 ![Alt text](/img/exec.png)
-- ``php parse.php -f "path_to_file" -d "sampleDB" -t "sapmleTable"``: 
+- ``php parser.php -f "path_to_file" -d "sampleDB" -t "sapmleTable"``:
 This command parses file path_to_file and saves data inside sapmleTable within sampleDB
